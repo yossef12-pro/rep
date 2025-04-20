@@ -4,7 +4,7 @@ import Header from "./header"
 import Footer from "./footer"
 function Slide() {
   return(
-    <div className="bg-white flex flex-col">
+    <div className="bg-white h-screen w-screen flex flex-col snap-start relative overflow-x-hidden">
       {/* HEADER */}
       <div className="flex justify-end">
       <Header/>
