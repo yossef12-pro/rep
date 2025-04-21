@@ -1,2 +1,9 @@
-import Footer from "../Slide_1/footer";
-export default Footer
+
+function Footer2(){
+    return(
+        <div className="fixed b-0 bg-black h-20 w-full">
+            
+        </div>
+    )
+}
+export default Footer2
