@@ -4,7 +4,7 @@ import { faCircle } from '@fortawesome/free-solid-svg-icons'
 import { faSquare } from '@fortawesome/free-solid-svg-icons'
 function Footer2(){
     return(
-        <div className="sticky bottom-0 z-100 bg-black h-25 -translate-y-[-1] w-full flex justify-between">
+        <div id='footer' className="sticky bottom-0 z-100 bg-black h-28 -translate-y-[-1] w-full flex justify-between">
             <div className='flex justify-center items-center text-5xl px-20 gap-3 '>
          <FontAwesomeIcon icon={faSquareCaretUp} style={{color: "#fff",}} />
          <FontAwesomeIcon icon={faCircle} style={{color: "#fff",}} />

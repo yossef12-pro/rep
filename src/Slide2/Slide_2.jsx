@@ -3,9 +3,8 @@ import Body2 from "./Body"
 import Footer2 from "./Footer"
 function Slide2(){
     return(
-        <div className="">
+        <div id="slide2">
             <Body2/>
-            <Footer2/>
         </div>
     ) 
 }
