@@ -3,9 +3,9 @@ import Body from "./Body"
 import Header from "./header"
 import Footer from "./footer"
 
-function Slide() {
+function Slide({slideref,id}) {
   return(
-    <div  className="bg-white h-screen w-screen flex flex-col snap-start relative overflow-x-hidden">
+    <div id={id}  ref={slideref} className="bg-white h-screen w-screen flex flex-col snap-start relative overflow-x-hidden">
       {/* HEADER */}
       <div className="flex justify-end">
       <Header/>
