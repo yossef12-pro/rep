@@ -4,10 +4,11 @@ import { faPiedPiper } from '@fortawesome/free-brands-svg-icons'
 import { faSquareCaretUp } from '@fortawesome/free-solid-svg-icons'
 import { faCircle } from '@fortawesome/free-solid-svg-icons'
 import { faSquare } from '@fortawesome/free-solid-svg-icons'
-
+import DarkModeToggle from '../Darkmode'
 function Header(){
     return(
         <div className=" h-full text-4xl mr-12 p-15 flex items-center gap-3 ">
+            <DarkModeToggle />
             <FontAwesomeIcon icon={faSquareCaretUp} style={{color: "#74C0FC",}} />
             <FontAwesomeIcon icon={faCircle} style={{color: "#63E6BE",}} />
             <FontAwesomeIcon icon={faSquare} style={{color: "#B197FC",}} />

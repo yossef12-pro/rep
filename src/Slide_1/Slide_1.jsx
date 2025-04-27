@@ -5,7 +5,7 @@ import Footer from "./footer"
 
 function Slide({slideref,id}) {
   return(
-    <div id={id}  ref={slideref} className="bg-white h-screen w-screen flex flex-col snap-start relative overflow-x-hidden">
+    <div id={id}  ref={slideref} className="bg-blue-50 h-screen w-screen flex flex-col snap-start relative overflow-x-hidden  dark:bg-gray-900 dark:text-white">
       {/* HEADER */}
       <div className="flex justify-end">
       <Header/>

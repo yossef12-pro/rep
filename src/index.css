@@ -4,4 +4,4 @@
 @theme {
     --font-primare: "Manrope", "sans-serif";
   }
-  
+  @custom-variant dark (&:where(.dark, .dark *));

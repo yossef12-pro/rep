@@ -3,8 +3,8 @@ import { faReact } from '@fortawesome/free-brands-svg-icons'
 function Footer({name}){
     return(
         <div className="flex  flex-col ml-50 mb-30 relative w-screen">
-            <input className="text-6xl font-bold font-primare placeholder-black outline-0 " placeholder={name}/>
-            <input className="text-2xl font-bold font-primare placeholder-black mt-5 outline-0" placeholder='Other details you’d like to share (Date & Time)'/> 
+            <p className="text-6xl font-bold font-primare placeholder-black outline-0 "> {name}</p>
+            <p className="text-2xl font-bold font-primare placeholder-black mt-5 outline-0">Other details you’d like to share (Date & Time)</p>
         </div>
     ) 
 }

@@ -4,7 +4,10 @@ import Slide2 from "./Slide2/Slide_2"
 import Slide3 from "./Slide3/Slide3"
 import Slide4 from "./Slide4/slide4"
 import Slide5 from "./Slide5/slide5"
+import Slide6 from "./Slide6/slide6"
+import Slide7 from "./Slide7/Slide7"
 import Footer2 from "./Slide2/Footer"
+import DarkModeToggle from "./Darkmode.jsx"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faReact } from '@fortawesome/free-brands-svg-icons'
 
@@ -34,13 +37,18 @@ function App() {
   }, [])
 
   return (
-    <div className="h-screen overflow-y-scroll overflow-x-hidden snap-y snap-mandatory scroll-smooth relative">
-      <FontAwesomeIcon icon={faReact} className='z-10 left-500 top-200 rotate-220 absolute' style={{ color: "#0400ff", fontSize: "70rem" }} />
+    <div className="h-screen overflow-y-scroll overflow-x-hidden snap-y snap-mandatory scroll-smooth relative  dark:bg-gray-900 dark:text-white bg-blue-50">
+      <FontAwesomeIcon icon={faReact} className="absolute z-10 text-blue-600 opacity-10 text-[20rem] md:text-[40rem] lg:text-[60rem] top-1/4 left-1/2 transform -translate-x-1/2 -rotate-45"
+       />
+      <div className="flex flex-col gap-70  ">
       <Slide id='slide1' slideref={slide1Ref} />
       <Slide2 id='slide2' slideref={slide2Ref1} />
       <Slide3 id='slide2' slideref={slide3Ref} />
       <Slide4/>
       <Slide5/>
+      <Slide6/>
+      <Slide7/>
+      </div>
       <Footer2 visible={showFooter} />
     </div>
   )
